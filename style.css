@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column; /* Allow stacking form and game area */
+  }
+  
+  #userForm, #gameArea {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  #userForm label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  #userForm input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  #userForm button, #gameOverScreen button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #userForm button:hover, #gameOverScreen button:hover {
+    background-color: #45a049;
+  }
+  
+  #gameInfo {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 10px; 
+  }
+  
+  #greeting {
+      font-weight: bold;
+  }
+  
+  #scoreDisplay {
+      font-weight: bold;
+      color: #333;
+  }
+  
+  #gameCanvas {
+    background: #1a1a1a; 
+    display: block;
+    margin: 0 auto; 
+    border: 5px solid #333; 
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5); 
+  }
+  
+  #gameOverScreen {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.9); 
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      color: #333;
+      z-index: 10; 
+  }
+  
+  #gameOverScreen h2 {
+      color: #d9534f;
+      margin-bottom: 15px;
+  }
+  
+  #gameOverScreen p {
+      margin: 10px 0;
+      font-size: 1.1em;
+  }
